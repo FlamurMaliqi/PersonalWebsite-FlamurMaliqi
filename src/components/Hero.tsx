@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   const [typedText, setTypedText] = useState('');
-  const fullText = 'YOUR NAME';
+  const fullText = 'FLAMUR MALIQI';
   const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const Hero = () => {
         </h1>
         
         <div className="bg-gray-900 border-4 border-gray-700 p-4 mb-8 inline-block">
-          <p className="text-gray-300 mb-2 text-lg">DEVELOPER / ENGINEER</p>
+          <p className="text-gray-300 mb-2 text-lg">SOFTWARE DEVELOPER</p>
           <div className="flex justify-center items-center mb-2">
             <span className="inline-block w-3 h-3 bg-red-500 mr-1 animate-pulse"></span>
             <span className="inline-block w-3 h-3 bg-yellow-500 mr-1 animate-pulse delay-75"></span>

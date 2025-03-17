@@ -36,8 +36,8 @@ const About = () => {
               <span className="inline-block w-3 h-3 bg-green-500"></span>
             </div>
             <div className="text-gray-300 mb-6">
-              <p className="mb-4 leading-relaxed">Hello World! I'm a passionate developer/engineer with experience in building and designing software.</p>
-              <p className="mb-4 leading-relaxed">I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.</p>
+              <p className="mb-4 leading-relaxed">Hello World! I am a Computer Science student in Ingolstadt, previously an intern at Audi Formel 1, IBM, and AWS.</p>
+              <p className="mb-4 leading-relaxed">I love hackathons and enjoy building innovative solutions that push the boundaries of technology.</p>
               <p className="leading-relaxed">My goal is to always build products that provide pixel-perfect, performant experiences.</p>
             </div>
             <div className="flex items-center">
