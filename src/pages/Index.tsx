@@ -47,32 +47,32 @@ const Index = () => {
       
       <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
       
-      <div className="container mx-auto px-4 py-8 relative z-10 flex-grow overflow-auto">
-        <div id="home" className={`pt-16 pb-4 ${activeSection === 'home' ? 'block' : 'hidden'}`}>
+      <div className="container mx-auto px-4 relative z-10 flex-grow flex items-center justify-center overflow-auto">
+        <div id="home" className={`w-full ${activeSection === 'home' ? 'block' : 'hidden'}`}>
           <Hero />
         </div>
         
-        <div id="about" className={`pt-16 pb-4 ${activeSection === 'about' ? 'block' : 'hidden'}`}>
+        <div id="about" className={`pt-16 w-full ${activeSection === 'about' ? 'block' : 'hidden'}`}>
           <About />
         </div>
         
-        <div id="experience" className={`pt-16 pb-4 ${activeSection === 'experience' ? 'block' : 'hidden'}`}>
+        <div id="experience" className={`pt-16 w-full ${activeSection === 'experience' ? 'block' : 'hidden'}`}>
           <Experience />
         </div>
         
-        <div id="projects" className={`pt-16 pb-4 ${activeSection === 'projects' ? 'block' : 'hidden'}`}>
+        <div id="projects" className={`pt-16 w-full ${activeSection === 'projects' ? 'block' : 'hidden'}`}>
           <Projects />
         </div>
         
-        <div id="education" className={`pt-16 pb-4 ${activeSection === 'education' ? 'block' : 'hidden'}`}>
+        <div id="education" className={`pt-16 w-full ${activeSection === 'education' ? 'block' : 'hidden'}`}>
           <Education />
         </div>
         
-        <div id="skills" className={`pt-16 pb-4 ${activeSection === 'skills' ? 'block' : 'hidden'}`}>
+        <div id="skills" className={`pt-16 w-full ${activeSection === 'skills' ? 'block' : 'hidden'}`}>
           <Skills />
         </div>
         
-        <div id="contact" className={`pt-16 pb-4 ${activeSection === 'contact' ? 'block' : 'hidden'}`}>
+        <div id="contact" className={`pt-16 w-full ${activeSection === 'contact' ? 'block' : 'hidden'}`}>
           <Contact />
         </div>
       </div>
