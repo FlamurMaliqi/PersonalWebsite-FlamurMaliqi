@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Badge } from '@/components/ui/badge';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const About = () => {
   return (
@@ -8,14 +9,17 @@ const About = () => {
       <div className="flex flex-col md:flex-row gap-8">
         <div className="md:w-1/3">
           <div className="border-4 border-gray-700 bg-gray-900 p-4 mb-4">
-            <div className="border-4 border-black bg-gray-800 p-1">
-              <img 
-                src="/lovable-uploads/227722af-c549-481b-92a7-1bb07b1b5652.png" 
-                alt="Binary Pattern" 
-                className="w-full h-auto filter brightness-50 contrast-150 mb-4" 
-              />
+            <div className="border-4 border-black bg-gray-800 p-1 mb-4">
+              <Avatar className="w-full h-auto aspect-square rounded-none">
+                <AvatarImage 
+                  src="/lovable-uploads/3e21a508-7437-4278-b293-c8787a8a17b6.png" 
+                  alt="Profile Picture"
+                  className="w-full h-auto object-cover filter contrast-110"
+                />
+                <AvatarFallback className="bg-gray-800 text-[#76c6d9]">FM</AvatarFallback>
+              </Avatar>
             </div>
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2">
               <Badge className="pixel-borders bg-gray-800 text-[#76c6d9]">DEVELOPER</Badge>
               <Badge className="pixel-borders bg-gray-800 text-[#76c6d9]">ENGINEER</Badge>
               <Badge className="pixel-borders bg-gray-800 text-[#76c6d9]">TECH</Badge>
