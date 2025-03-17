@@ -24,30 +24,30 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="min-h-[80vh] flex flex-col items-center justify-center text-center pixel-fade-in">
+    <div className="flex flex-col items-center justify-center text-center pixel-fade-in">
       <div className="max-w-4xl mx-auto">
-        <img src="/lovable-uploads/2b41ee63-6088-4b23-b139-bd03db8eeedf.png" alt="Pixel Computer" className="w-24 h-24 mx-auto mb-6" />
+        <img src="/lovable-uploads/2b41ee63-6088-4b23-b139-bd03db8eeedf.png" alt="Pixel Computer" className="w-20 h-20 mx-auto mb-4" />
         
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 text-[#76c6d9]">
+        <h1 className="text-2xl md:text-3xl font-bold mb-2 text-[#76c6d9]">
           {typedText}
           <span className={`text-white ${showCursor ? 'opacity-100' : 'opacity-0'}`}>_</span>
         </h1>
         
-        <div className="bg-gray-900 border-4 border-gray-700 p-4 mb-8 inline-block">
-          <p className="text-gray-300 mb-2 text-lg">SOFTWARE DEVELOPER</p>
-          <div className="flex justify-center items-center mb-2">
-            <span className="inline-block w-3 h-3 bg-red-500 mr-1 animate-pulse"></span>
-            <span className="inline-block w-3 h-3 bg-yellow-500 mr-1 animate-pulse delay-75"></span>
-            <span className="inline-block w-3 h-3 bg-green-500 animate-pulse delay-150"></span>
+        <div className="bg-gray-900 border-4 border-gray-700 p-3 mb-4 inline-block">
+          <p className="text-gray-300 text-md">SOFTWARE DEVELOPER</p>
+          <div className="flex justify-center items-center my-1">
+            <span className="inline-block w-2 h-2 bg-red-500 mr-1 animate-pulse"></span>
+            <span className="inline-block w-2 h-2 bg-yellow-500 mr-1 animate-pulse delay-75"></span>
+            <span className="inline-block w-2 h-2 bg-green-500 animate-pulse delay-150"></span>
           </div>
-          <p className="text-white text-sm whitespace-pre-wrap">WELCOME TO MY DIGITAL PORTFOLIO</p>
+          <p className="text-white text-xs whitespace-pre-wrap">WELCOME TO MY DIGITAL PORTFOLIO</p>
         </div>
         
-        <div className="flex flex-wrap justify-center gap-4">
-          <Button className="pixel-btn hover:bg-[#76c6d9]" variant="outline">
+        <div className="flex flex-wrap justify-center gap-2">
+          <Button className="pixel-btn hover:bg-[#76c6d9] text-xs py-1" variant="outline">
             VIEW PROJECTS
           </Button>
-          <Button className="pixel-btn hover:bg-[#76c6d9]" variant="outline">
+          <Button className="pixel-btn hover:bg-[#76c6d9] text-xs py-1" variant="outline">
             CONTACT ME
           </Button>
         </div>

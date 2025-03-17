@@ -42,66 +42,45 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black relative binary-bg">
+    <div className="h-screen bg-black relative binary-bg flex flex-col">
       <div className="binary-overlay"></div>
       
-      <div className="container mx-auto px-4 py-8 relative z-10">
-        <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
-        
-        <div id="home" className={`min-h-screen flex flex-col ${activeSection === 'home' ? 'block' : 'hidden'}`}>
-          <div className="flex-grow pt-16">
-            <Hero />
-          </div>
-          <Separator className="my-8 bg-gray-700" />
+      <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
+      
+      <div className="container mx-auto px-4 py-8 relative z-10 flex-grow overflow-auto">
+        <div id="home" className={`pt-16 pb-4 ${activeSection === 'home' ? 'block' : 'hidden'}`}>
+          <Hero />
         </div>
         
-        <div id="about" className={`min-h-screen flex flex-col ${activeSection === 'about' ? 'block' : 'hidden'}`}>
-          <div className="flex-grow pt-16">
-            <About />
-          </div>
-          <Separator className="my-8 bg-gray-700" />
+        <div id="about" className={`pt-16 pb-4 ${activeSection === 'about' ? 'block' : 'hidden'}`}>
+          <About />
         </div>
         
-        <div id="experience" className={`min-h-screen flex flex-col ${activeSection === 'experience' ? 'block' : 'hidden'}`}>
-          <div className="flex-grow pt-16">
-            <Experience />
-          </div>
-          <Separator className="my-8 bg-gray-700" />
+        <div id="experience" className={`pt-16 pb-4 ${activeSection === 'experience' ? 'block' : 'hidden'}`}>
+          <Experience />
         </div>
         
-        <div id="projects" className={`min-h-screen flex flex-col ${activeSection === 'projects' ? 'block' : 'hidden'}`}>
-          <div className="flex-grow pt-16">
-            <Projects />
-          </div>
-          <Separator className="my-8 bg-gray-700" />
+        <div id="projects" className={`pt-16 pb-4 ${activeSection === 'projects' ? 'block' : 'hidden'}`}>
+          <Projects />
         </div>
         
-        <div id="education" className={`min-h-screen flex flex-col ${activeSection === 'education' ? 'block' : 'hidden'}`}>
-          <div className="flex-grow pt-16">
-            <Education />
-          </div>
-          <Separator className="my-8 bg-gray-700" />
+        <div id="education" className={`pt-16 pb-4 ${activeSection === 'education' ? 'block' : 'hidden'}`}>
+          <Education />
         </div>
         
-        <div id="skills" className={`min-h-screen flex flex-col ${activeSection === 'skills' ? 'block' : 'hidden'}`}>
-          <div className="flex-grow pt-16">
-            <Skills />
-          </div>
-          <Separator className="my-8 bg-gray-700" />
+        <div id="skills" className={`pt-16 pb-4 ${activeSection === 'skills' ? 'block' : 'hidden'}`}>
+          <Skills />
         </div>
         
-        <div id="contact" className={`min-h-screen flex flex-col ${activeSection === 'contact' ? 'block' : 'hidden'}`}>
-          <div className="flex-grow pt-16">
-            <Contact />
-          </div>
-          <Separator className="my-8 bg-gray-700" />
+        <div id="contact" className={`pt-16 pb-4 ${activeSection === 'contact' ? 'block' : 'hidden'}`}>
+          <Contact />
         </div>
-        
-        <footer className="mt-auto text-center text-gray-500 text-xs py-6">
-          <p className="mb-2">© {new Date().getFullYear()} | Made with pixel power</p>
-          <div className="text-[10px] binary-code">01001100 01101111 01110110 01100001 01100010 01101100 01100101</div>
-        </footer>
       </div>
+      
+      <footer className="text-center text-gray-500 text-xs py-6 px-4 border-t border-gray-800">
+        <p className="mb-2">© {new Date().getFullYear()} | Made with pixel power</p>
+        <div className="text-[10px] binary-code">01001100 01101111 01110110 01100001 01100010 01101100 01100101</div>
+      </footer>
     </div>
   );
 };
