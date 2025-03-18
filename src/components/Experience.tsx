@@ -6,7 +6,20 @@ import { Separator } from '@/components/ui/separator';
 const experiences = [
   {
     id: 1,
-    title: "Parttime Software Development Engineer",
+    title: "AWS Solution Architect Intern",
+    company: "Amazon Web Services",
+    date: "January 2025 - Present",
+    description: [
+      "Designing and implementing scalable cloud architecture solutions for enterprise clients",
+      "Working with AWS services including EC2, S3, Lambda, and CloudFormation",
+      "Creating technical documentation and client-facing architecture diagrams",
+      "Collaborating with cross-functional teams to optimize cloud resources and costs"
+    ],
+    icon: "/lovable-uploads/b0e9feaf-d7a2-4bd7-a732-221cbd419a05.png"
+  },
+  {
+    id: 2,
+    title: "Software Development Engineer (Part-time)",
     company: "EXP Software GmbH",
     date: "August 2024 - Present",
     description: [
@@ -17,8 +30,8 @@ const experiences = [
     icon: "/lovable-uploads/06c5d1ab-d48c-4035-9afe-22a35922fcd4.png"
   },
   {
-    id: 2,
-    title: "Intern Software Development Engineer",
+    id: 3,
+    title: "SDE Intern - IBM",
     company: "IBM",
     date: "Oktober 2024 - Februar 2025",
     description: [
@@ -31,8 +44,8 @@ const experiences = [
     icon: "/lovable-uploads/2b41ee63-6088-4b23-b139-bd03db8eeedf.png"
   },
   {
-    id: 3,
-    title: "Intern Software Development Engineer",
+    id: 4,
+    title: "SDE Intern - Audi F1 Project",
     company: "Audi F1 Project",
     date: "April 2024 - September 2024",
     description: [
@@ -44,8 +57,8 @@ const experiences = [
     icon: "/lovable-uploads/3a8891e9-83ed-4c72-90a9-82bf3e0d0d62.png"
   },
   {
-    id: 4,
-    title: "Tutor - Java Lecture",
+    id: 5,
+    title: "Java Tutor - THI",
     company: "Technische Hochschule Ingolstadt",
     date: "März 2024 - August 2024",
     description: [
@@ -55,8 +68,8 @@ const experiences = [
     icon: "/lovable-uploads/06c5d1ab-d48c-4035-9afe-22a35922fcd4.png"
   },
   {
-    id: 5,
-    title: "Co-Founder | Winner Audi RealLabor Kreathon",
+    id: 6,
+    title: "Co-Founder - Audi RealLabor Kreathon",
     company: "Audi Sport GmbH",
     date: "Oktober 2023 - April 2024",
     description: [
@@ -67,8 +80,8 @@ const experiences = [
     icon: "/lovable-uploads/2b41ee63-6088-4b23-b139-bd03db8eeedf.png"
   },
   {
-    id: 6,
-    title: "Student Researcher",
+    id: 7,
+    title: "Student Researcher - SPARKS",
     company: "SPARKS GmbH",
     date: "Oktober 2023 - März 2024",
     description: [
@@ -79,8 +92,8 @@ const experiences = [
     icon: "/lovable-uploads/3a8891e9-83ed-4c72-90a9-82bf3e0d0d62.png"
   },
   {
-    id: 7,
-    title: "Working Student - SAP Developer",
+    id: 8,
+    title: "Working Student - Maschinenringe",
     company: "Maschinenringe Deutschland GmbH",
     date: "Februar 2023 - Juli 2023",
     description: [
@@ -118,7 +131,7 @@ const Experience = () => {
               >
                 <div className="flex items-center">
                   <img src={exp.icon} alt={exp.company} className="w-6 h-6 mr-2" />
-                  <span>{exp.company}</span>
+                  <span>{exp.title}</span>
                 </div>
               </button>
             ))}
@@ -131,9 +144,16 @@ const Experience = () => {
             .map(experience => (
               <div key={experience.id} className="border-4 border-gray-700 bg-gray-900 p-4">
                 <div className="flex justify-between items-start mb-4">
-                  <div>
-                    <h3 className="text-xl font-bold text-white">{experience.title}</h3>
-                    <p className="text-[#76c6d9]">{experience.company}</p>
+                  <div className="flex items-center">
+                    <img 
+                      src={experience.icon} 
+                      alt={experience.company} 
+                      className="w-12 h-12 mr-3 border-2 border-gray-700 p-1 bg-gray-800"
+                    />
+                    <div>
+                      <h3 className="text-xl font-bold text-white">{experience.title}</h3>
+                      <p className="text-[#76c6d9]">{experience.company}</p>
+                    </div>
                   </div>
                   <span className="bg-gray-800 px-3 py-1 text-gray-400 text-xs border-2 border-gray-700">
                     {experience.date}
