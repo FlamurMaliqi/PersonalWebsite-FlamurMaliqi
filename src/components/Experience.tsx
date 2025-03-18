@@ -109,6 +109,17 @@ const experiences = [
 const Experience = () => {
   const [activeExp, setActiveExp] = useState(experiences[0].id);
 
+  // Helper function to extract just the position name from the title
+  const getPositionName = (title: string) => {
+    // For titles with format "Position - Company", return just "Position"
+    if (title.includes(" - ")) {
+      return title.split(" - ")[0];
+    }
+    
+    // For other formats, return the full title
+    return title;
+  };
+
   return (
     <div className="pixel-fade-in">
       <h2 className="text-2xl font-bold mb-6 text-[#76c6d9] inline-flex items-center">
@@ -131,7 +142,7 @@ const Experience = () => {
               >
                 <div className="flex items-center">
                   <img src={exp.icon} alt={exp.company} className="w-6 h-6 mr-2" />
-                  <span>{exp.title}</span>
+                  <span>{getPositionName(exp.title)}</span>
                 </div>
               </button>
             ))}
