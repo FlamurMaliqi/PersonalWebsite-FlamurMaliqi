@@ -9,10 +9,7 @@ const experiences = [
     company: "Amazon Web Services",
     date: "January 2025 - Present",
     description: [
-      "Designing and implementing scalable cloud architecture solutions for enterprise clients",
-      "Working with AWS services including EC2, S3, Lambda, and CloudFormation",
-      "Creating technical documentation and client-facing architecture diagrams",
-      "Collaborating with cross-functional teams to optimize cloud resources and costs"
+      "Incoming"
     ],
     icon: "/lovable-uploads/b0e9feaf-d7a2-4bd7-a732-221cbd419a05.png"
   },
