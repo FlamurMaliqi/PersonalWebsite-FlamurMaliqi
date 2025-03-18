@@ -2,16 +2,17 @@
 import React from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 
 const projects = [
   {
     id: 1,
-    title: "Project Alpha",
-    description: "A web application for managing tasks and productivity",
-    technologies: ["React", "Node.js", "MongoDB"],
+    title: "Bus Booking System",
+    description: "A bus booking tool for the local community",
+    technologies: ["React", "Quarkus"],
     image: "/lovable-uploads/227722af-c549-481b-92a7-1bb07b1b5652.png",
-    demoLink: "#",
-    codeLink: "#"
+    demoLink: "https://www.vgi-bus-booking.de/",
+    codeLink: "https://github.com/FlamurMaliqi/CodingSample"
   },
   {
     id: 2,
@@ -43,11 +44,11 @@ const Projects = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map(project => (
-          <div 
+          <Card 
             key={project.id} 
-            className="border-4 border-gray-700 bg-gray-900 p-4 hover:transform hover:-translate-y-1 transition-transform duration-200"
+            className="border-4 border-gray-700 bg-gray-900 hover:transform hover:-translate-y-1 transition-transform duration-200"
           >
-            <div className="relative mb-4 border-4 border-gray-800 overflow-hidden">
+            <div className="relative border-b-4 border-gray-800 overflow-hidden">
               <img 
                 src={project.image} 
                 alt={project.title} 
@@ -58,25 +59,35 @@ const Projects = () => {
               </div>
             </div>
             
-            <p className="text-gray-300 mb-4 h-12 overflow-hidden">{project.description}</p>
+            <CardContent className="p-4">
+              <p className="text-gray-300 mb-4 h-12 overflow-hidden">{project.description}</p>
+              
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.technologies.map((tech, index) => (
+                  <Badge key={index} className="bg-gray-800 text-[#76c6d9] border-2 border-gray-700">
+                    {tech}
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
             
-            <div className="flex flex-wrap gap-2 mb-4">
-              {project.technologies.map((tech, index) => (
-                <Badge key={index} className="bg-gray-800 text-[#76c6d9] border-2 border-gray-700">
-                  {tech}
-                </Badge>
-              ))}
-            </div>
-            
-            <div className="flex gap-3">
-              <Button className="w-1/2 pixel-btn bg-gray-800 text-[#76c6d9] hover:bg-[#76c6d9] hover:text-black" size="sm">
+            <CardFooter className="flex gap-3 p-4 pt-0">
+              <Button 
+                className="w-1/2 pixel-btn bg-gray-800 text-[#76c6d9] hover:bg-[#76c6d9] hover:text-black" 
+                size="sm"
+                onClick={() => window.open(project.demoLink, '_blank')}
+              >
                 DEMO
               </Button>
-              <Button className="w-1/2 pixel-btn bg-gray-800 text-[#76c6d9] hover:bg-[#76c6d9] hover:text-black" size="sm">
+              <Button 
+                className="w-1/2 pixel-btn bg-gray-800 text-[#76c6d9] hover:bg-[#76c6d9] hover:text-black" 
+                size="sm"
+                onClick={() => window.open(project.codeLink, '_blank')}
+              >
                 CODE
               </Button>
-            </div>
-          </div>
+            </CardFooter>
+          </Card>
         ))}
       </div>
     </div>
