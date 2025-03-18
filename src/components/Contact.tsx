@@ -54,8 +54,8 @@ const Contact = () => {
               <div className="w-8 h-8 mr-3 flex items-center justify-center border-2 border-gray-700 bg-gray-800">
                 <span className="text-[#76c6d9]">#</span>
               </div>
-              <a href="https://www.linkedin.com/in/flamurm-1a8267258" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#76c6d9] transition-colors">
-                linkedin.com/in/flamurm-1a8267258
+              <a href="https://www.linkedin.com/in/flamur-m-1a8267258/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#76c6d9] transition-colors">
+                linkedin.com/in/flamur-m-1a8267258
               </a>
             </div>
             
