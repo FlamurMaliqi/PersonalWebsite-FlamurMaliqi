@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Separator } from '@/components/ui/separator';
 
@@ -63,18 +62,6 @@ const experiences = [
       "I demonstrate and explain the basics of Java programming and help about 20 students to understand and apply these concepts"
     ],
     icon: "/lovable-uploads/630551ef-8a06-49c8-96c0-18f25b952978.png"
-  },
-  {
-    id: 6,
-    title: "Co-Founder - Audi RealLabor Kreathon",
-    company: "Audi Sport GmbH",
-    date: "Oktober 2023 - April 2024",
-    description: [
-      "As part of the Audi RealLabor Kreathon 2023, we developed an intelligent, community-based work scheduling system that makes shift planning more flexible, efficient, and socially inclusive",
-      "Our innovative approach impressed the jury, earning us both the Innovation Award and the Jury Award",
-      "Building on our prototype, the project received five-figure financial support from Audi Sport to develop a production-ready solution for real-world deployment"
-    ],
-    icon: "/lovable-uploads/72dd074c-3986-4c0b-a825-575dffed232e.png"
   },
   {
     id: 7,
