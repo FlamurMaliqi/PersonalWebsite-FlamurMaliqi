@@ -41,8 +41,7 @@ const About = () => {
             </div>
             <div className="text-gray-300 mb-6">
               <p className="mb-4 leading-relaxed">Hello World! I am a Computer Science student at Technische Hochschule Ingolstadt, with experience as an intern at Audi F1 Project, IBM, and an incoming Solution Architect Intern at AWS.</p>
-              <p className="mb-4 leading-relaxed">I am passionate about software development and have worked on various projects, from Formula 1 control units to RESTful APIs and microservices.</p>
-              <p className="leading-relaxed">I've been recognized with several awards and scholarships, including the Innovation Award at the Audi RealLabor Kreathon and the Heinrich Böll Scholarship.</p>
+              <p className="leading-relaxed">I am passionate about software development and have worked on various projects, from Formula 1 control units to RESTful APIs and microservices.</p>
             </div>
             <div className="flex items-center">
               <span className="text-[#76c6d9] mr-2">$</span>
