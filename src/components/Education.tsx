@@ -7,7 +7,12 @@ const education = [
     degree: "Bachelor of Informatik",
     school: "Technische Hochschule Ingolstadt",
     date: "2022 - 2026",
-    description: "Currently pursuing a Bachelor's degree in Computer Science."
+    description: "Currently pursuing a Bachelor's degree in Computer Science. Note: German: 1,5 - GPA: 3.5",
+    additionalInfo: [
+      "Student spokesman:",
+      "- Organising and representing the interests of students towards the faculty and other committees",
+      "- Participation in the accreditation procedure for the computer science degree programme"
+    ]
   },
   {
     id: 2,
@@ -62,6 +67,16 @@ const Education = () => {
               
               <p className="text-[#76c6d9] mb-3">{edu.school}</p>
               <p className="text-gray-300 text-sm">{edu.description}</p>
+              
+              {edu.additionalInfo && (
+                <div className="mt-3 pl-2 border-l-2 border-[#76c6d9] text-gray-300 text-sm">
+                  {edu.additionalInfo.map((info, idx) => (
+                    <p key={idx} className={`${info.startsWith('-') ? 'ml-3' : 'text-white font-medium'}`}>
+                      {info}
+                    </p>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
           
