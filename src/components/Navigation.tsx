@@ -36,7 +36,13 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, setActiveSection
         
         <div className="hidden md:flex justify-between items-center">
           <div className="flex items-center">
-            <img src="/lovable-uploads/3a8891e9-83ed-4c72-90a9-82bf3e0d0d62.png" alt="Pixel Floppy Disk" className="w-8 h-8 mr-2" />
+            <div className="bg-transparent mr-2">
+              <img 
+                src="/lovable-uploads/3a8891e9-83ed-4c72-90a9-82bf3e0d0d62.png" 
+                alt="Pixel Floppy Disk" 
+                className="w-8 h-8 object-contain" 
+              />
+            </div>
             <span className="text-[#76c6d9] font-bold">PIXEL.DEV</span>
           </div>
           
