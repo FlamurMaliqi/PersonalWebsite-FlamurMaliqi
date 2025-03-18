@@ -38,7 +38,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, setActiveSection
           <div className="flex items-center">
             <div className="bg-transparent mr-2">
               <img 
-                src="/lovable-uploads/3a8891e9-83ed-4c72-90a9-82bf3e0d0d62.png" 
+                src="/lovable-uploads/b0e9feaf-d7a2-4bd7-a732-221cbd419a05.png" 
                 alt="Pixel Floppy Disk" 
                 className="w-8 h-8 object-contain" 
               />
