@@ -12,7 +12,7 @@ const About = () => {
             <div className="border-4 border-black bg-gray-800 p-1 mb-4">
               <Avatar className="w-full h-auto aspect-square rounded-none">
                 <AvatarImage 
-                  src="/lovable-uploads/3e21a508-7437-4278-b293-c8787a8a17b6.png" 
+                  src="/lovable-uploads/57b6919d-70fa-4730-8c00-9f7715e58396.png" 
                   alt="Profile Picture"
                   className="w-full h-auto object-cover filter contrast-110"
                 />
