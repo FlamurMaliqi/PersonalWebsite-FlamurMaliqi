@@ -47,7 +47,7 @@ const Contact = () => {
               <div className="w-8 h-8 mr-3 flex items-center justify-center border-2 border-gray-700 bg-gray-800">
                 <span className="text-[#76c6d9]">@</span>
               </div>
-              <p className="text-gray-300">flamur.maliqi2811@gmail.com</p>
+              <p className="text-gray-300">contact@flamur-maliqi.de</p>
             </div>
             
             <div className="flex items-center">
@@ -63,8 +63,17 @@ const Contact = () => {
               <div className="w-8 h-8 mr-3 flex items-center justify-center border-2 border-gray-700 bg-gray-800">
                 <span className="text-[#76c6d9]">!</span>
               </div>
-              <a href="https://flamur-maliqi.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#76c6d9] transition-colors">
-                flamur-maliqi.com
+              <a href="https://linktr.ee/flamurmaliqi" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#76c6d9] transition-colors">
+                linktr.ee/flamurmaliqi
+              </a>
+            </div>
+            
+            <div className="flex items-center">
+              <div className="w-8 h-8 mr-3 flex items-center justify-center border-2 border-gray-700 bg-gray-800">
+                <span className="text-[#76c6d9]">$</span>
+              </div>
+              <a href="https://github.com/FlamurMaliqi" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#76c6d9] transition-colors">
+                github.com/FlamurMaliqi
               </a>
             </div>
           </div>
