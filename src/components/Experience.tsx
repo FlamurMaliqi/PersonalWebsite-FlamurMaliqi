@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Separator } from '@/components/ui/separator';
 
@@ -6,7 +5,7 @@ import { Separator } from '@/components/ui/separator';
 const experiences = [
   {
     id: 1,
-    title: "AWS Solution Architect Intern",
+    title: "Solution Architect Intern",
     company: "Amazon Web Services",
     date: "January 2025 - Present",
     description: [
@@ -19,7 +18,7 @@ const experiences = [
   },
   {
     id: 2,
-    title: "Software Development Engineer (Part-time)",
+    title: "Software Developer Student",
     company: "EXP Software GmbH",
     date: "August 2024 - Present",
     description: [
@@ -31,7 +30,7 @@ const experiences = [
   },
   {
     id: 3,
-    title: "SDE Intern - IBM",
+    title: "Software Developer Intern - IBM",
     company: "IBM",
     date: "Oktober 2024 - Februar 2025",
     description: [
@@ -45,7 +44,7 @@ const experiences = [
   },
   {
     id: 4,
-    title: "SDE Intern - Audi F1 Project",
+    title: "Software Developer Intern - Audi F1 Project",
     company: "Audi F1 Project",
     date: "April 2024 - September 2024",
     description: [
