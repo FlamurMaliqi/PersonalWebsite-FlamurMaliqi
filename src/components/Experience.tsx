@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Separator } from '@/components/ui/separator';
 
@@ -38,7 +37,7 @@ const experiences = [
       "Adapted the test framework for easy deployment on multiple OpenShift clusters",
       "Developed a prototype to generate C++ code from a REST interface (Apache Iceberg, IBM Data Gate)"
     ],
-    icon: "/lovable-uploads/3e21a508-7437-4278-b293-c8787a8a17b6.png"
+    icon: "/lovable-uploads/57b6919d-70fa-4730-8c00-9f7715e58396.png"
   },
   {
     id: 4,
@@ -51,7 +50,7 @@ const experiences = [
       "Implemented real-time control logic in C for embedded systems, ensuring performance and accuracy in critical functions like engine management",
       "Created Python tools to automate development processes, boosting productivity and accuracy in data analysis and system integration"
     ],
-    icon: "/lovable-uploads/57b6919d-70fa-4730-8c00-9f7715e58396.png"
+    icon: "/lovable-uploads/3e21a508-7437-4278-b293-c8787a8a17b6.png"
   },
   {
     id: 5,
