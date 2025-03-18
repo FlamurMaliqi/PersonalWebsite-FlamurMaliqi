@@ -21,8 +21,8 @@ const About = () => {
             </div>
             <div className="flex flex-wrap gap-2">
               <Badge className="pixel-borders bg-gray-800 text-[#76c6d9]">DEVELOPER</Badge>
-              <Badge className="pixel-borders bg-gray-800 text-[#76c6d9]">ENGINEER</Badge>
-              <Badge className="pixel-borders bg-gray-800 text-[#76c6d9]">TECH</Badge>
+              <Badge className="pixel-borders bg-gray-800 text-[#76c6d9]">CS STUDENT</Badge>
+              <Badge className="pixel-borders bg-gray-800 text-[#76c6d9]">AWS INTERN</Badge>
             </div>
           </div>
         </div>
@@ -40,9 +40,9 @@ const About = () => {
               <span className="inline-block w-3 h-3 bg-green-500"></span>
             </div>
             <div className="text-gray-300 mb-6">
-              <p className="mb-4 leading-relaxed">Hello World! I am a Computer Science student in Ingolstadt, previously an intern at Audi Formel 1, IBM, and AWS.</p>
-              <p className="mb-4 leading-relaxed">I love hackathons and enjoy building innovative solutions that push the boundaries of technology.</p>
-              <p className="leading-relaxed">My goal is to always build products that provide pixel-perfect, performant experiences.</p>
+              <p className="mb-4 leading-relaxed">Hello World! I am a Computer Science student at Technische Hochschule Ingolstadt, with experience as an intern at Audi F1 Project, IBM, and an incoming Solution Architect Intern at AWS.</p>
+              <p className="mb-4 leading-relaxed">I am passionate about software development and have worked on various projects, from Formula 1 control units to RESTful APIs and microservices.</p>
+              <p className="leading-relaxed">I've been recognized with several awards and scholarships, including the Innovation Award at the Audi RealLabor Kreathon and the Heinrich Böll Scholarship.</p>
             </div>
             <div className="flex items-center">
               <span className="text-[#76c6d9] mr-2">$</span>

@@ -5,37 +5,37 @@ const skillsCategories = [
   {
     category: "Programming Languages",
     skills: [
-      { name: "JavaScript", level: 90 },
-      { name: "TypeScript", level: 85 },
-      { name: "Python", level: 75 },
-      { name: "Java", level: 65 }
+      { name: "Java", level: 90 },
+      { name: "Python", level: 85 },
+      { name: "C", level: 75 },
+      { name: "ABAP", level: 70 }
     ]
   },
   {
     category: "Frontend",
     skills: [
-      { name: "React", level: 90 },
-      { name: "HTML/CSS", level: 95 },
-      { name: "Vue.js", level: 70 },
-      { name: "Angular", level: 60 }
+      { name: "Vue.js", level: 85 },
+      { name: "Next.js", level: 75 },
+      { name: "HTML/CSS", level: 90 },
+      { name: "JavaScript", level: 85 }
     ]
   },
   {
-    category: "Backend",
+    category: "Backend & Databases",
     skills: [
-      { name: "Node.js", level: 85 },
-      { name: "Express", level: 80 },
-      { name: "MongoDB", level: 75 },
-      { name: "SQL", level: 70 }
+      { name: "PostgreSQL", level: 90 },
+      { name: "RESTful APIs", level: 85 },
+      { name: "Quarkus.io", level: 80 },
+      { name: "Java EE", level: 75 }
     ]
   },
   {
-    category: "DevOps & Tools",
+    category: "Tools & Technologies",
     skills: [
-      { name: "Git", level: 90 },
-      { name: "Docker", level: 75 },
-      { name: "AWS", level: 70 },
-      { name: "CI/CD", level: 65 }
+      { name: "Matlab", level: 90 },
+      { name: "Git", level: 85 },
+      { name: "Docker/Kubernetes", level: 80 },
+      { name: "Apache Camel", level: 75 }
     ]
   }
 ];
@@ -77,8 +77,8 @@ const Skills = () => {
         <h3 className="text-lg font-bold text-white mb-4">OTHER SKILLS</h3>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {["Problem Solving", "Team Leadership", "UI/UX Design", "Agile Methodologies", 
-            "Technical Writing", "Responsive Design", "Performance Optimization", "Mentoring"].map((skill, i) => (
+          {["SAP Development", "Jenkins", "OpenShift", "API Testing", 
+            "Simulink", "Embedded Systems", "Agile Methodologies", "CI/CD"].map((skill, i) => (
             <div key={i} className="border-2 border-gray-700 bg-gray-800 p-2 text-center text-gray-300 text-sm">
               {skill}
             </div>

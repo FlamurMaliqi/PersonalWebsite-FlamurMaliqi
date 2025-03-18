@@ -4,38 +4,50 @@ import React from 'react';
 const education = [
   {
     id: 1,
-    degree: "Master of Computer Science",
-    school: "Tech University",
-    date: "2014 - 2016",
-    description: "Specialized in advanced algorithms and data structures. Thesis on optimizing cloud computing architectures."
+    degree: "Bachelor of Informatik",
+    school: "Technische Hochschule Ingolstadt",
+    date: "2022 - 2026",
+    description: "Currently pursuing a Bachelor's degree in Computer Science."
   },
   {
     id: 2,
-    degree: "Bachelor of Science in Software Engineering",
-    school: "State University",
-    date: "2010 - 2014",
-    description: "Graduated with honors. Participated in multiple programming competitions and hackathons."
+    degree: "Allgemeine Hochschulreife",
+    school: "Descartes Gymnasium Neuburg",
+    date: "2013 - 2022",
+    description: "Completed high school education with excellence."
   }
 ];
 
 const certifications = [
-  "AWS Certified Solutions Architect",
-  "Google Cloud Professional Developer",
-  "Microsoft Certified: Azure Developer Associate"
+  "PostgreSQL",
+  "Vue.js",
+  "Matlab"
 ];
 
 const scholarships = [
   {
-    name: "Tech Excellence Scholarship",
-    provider: "Tech Industry Association",
-    year: "2014",
-    description: "Full-tuition scholarship awarded for outstanding academic performance and innovation."
+    name: "Heinrich Böll Stipendiat",
+    provider: "Heinrich-Böll-Stiftung",
+    year: "2025",
+    description: "The Heinrich Böll Foundation is a politically green-oriented foundation that supports students with social commitment and excellent academic achievements both financially and ideally."
   },
   {
-    name: "Future Leaders in Computing",
-    provider: "National Science Foundation",
-    year: "2012",
-    description: "Merit-based scholarship for promising undergraduate computer science students."
+    name: "Deutschlandstipendium",
+    provider: "German Scholarship",
+    year: "2023",
+    description: "Merit-based scholarship awarded for academic excellence and social commitment."
+  },
+  {
+    name: "DPG-Abiturpreis",
+    provider: "Deutsche Physikalische Gesellschaft",
+    year: "2022",
+    description: "Award for excellence in physics during high school education."
+  },
+  {
+    name: "Innovation Award RealLabor Kreathon",
+    provider: "Audi Sport GmbH",
+    year: "2023",
+    description: "Recognized for developing an innovative, community-based work scheduling system that makes shift planning more flexible, efficient, and socially inclusive."
   }
 ];
 
@@ -73,7 +85,7 @@ const Education = () => {
           
           {/* Scholarships Section */}
           <div className="border-4 border-gray-700 bg-gray-900 p-4 mb-6">
-            <h3 className="text-lg font-bold text-white mb-4">SCHOLARSHIPS</h3>
+            <h3 className="text-lg font-bold text-white mb-4">SCHOLARSHIPS & AWARDS</h3>
             
             {scholarships.map((scholarship, index) => (
               <div key={index} className="mb-4 border-l-2 border-[#76c6d9] pl-3">
@@ -92,7 +104,7 @@ const Education = () => {
         
         <div>
           <div className="border-4 border-gray-700 bg-gray-900 p-4">
-            <h3 className="text-lg font-bold text-white mb-4">CERTIFICATIONS</h3>
+            <h3 className="text-lg font-bold text-white mb-4">TOP SKILLS</h3>
             
             <ul className="space-y-4">
               {certifications.map((cert, index) => (

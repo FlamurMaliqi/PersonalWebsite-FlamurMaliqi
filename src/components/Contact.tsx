@@ -47,26 +47,30 @@ const Contact = () => {
               <div className="w-8 h-8 mr-3 flex items-center justify-center border-2 border-gray-700 bg-gray-800">
                 <span className="text-[#76c6d9]">@</span>
               </div>
-              <p className="text-gray-300">email@example.com</p>
+              <p className="text-gray-300">flamur.maliqi2811@gmail.com</p>
             </div>
             
             <div className="flex items-center">
               <div className="w-8 h-8 mr-3 flex items-center justify-center border-2 border-gray-700 bg-gray-800">
                 <span className="text-[#76c6d9]">#</span>
               </div>
-              <p className="text-gray-300">@username</p>
+              <a href="https://www.linkedin.com/in/flamurm-1a8267258" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#76c6d9] transition-colors">
+                linkedin.com/in/flamurm-1a8267258
+              </a>
             </div>
             
             <div className="flex items-center">
               <div className="w-8 h-8 mr-3 flex items-center justify-center border-2 border-gray-700 bg-gray-800">
                 <span className="text-[#76c6d9]">!</span>
               </div>
-              <p className="text-gray-300">github.com/username</p>
+              <a href="https://flamur-maliqi.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#76c6d9] transition-colors">
+                flamur-maliqi.com
+              </a>
             </div>
           </div>
           
           <div className="mt-6 p-3 border-2 border-gray-700 bg-gray-800">
-            <p className="text-gray-400 text-sm">Currently available for full-time positions and freelance projects.</p>
+            <p className="text-gray-400 text-sm">CS Student & Incoming Solution Architect Intern @ AWS</p>
           </div>
         </div>
         
