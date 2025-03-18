@@ -34,36 +34,36 @@ const Projects = () => {
               <img 
                 src={project.image} 
                 alt={project.title} 
-                className="w-full h-48 object-cover filter brightness-50 contrast-125" 
+                className="w-full h-64 object-cover filter brightness-50 contrast-125" 
               />
               <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-                <h3 className="text-xl font-bold text-white text-center px-4">{project.title}</h3>
+                <h3 className="text-2xl font-bold text-white text-center px-4">{project.title}</h3>
               </div>
             </div>
             
-            <CardContent className="p-4">
-              <p className="text-gray-300 mb-4 h-12 overflow-hidden">{project.description}</p>
+            <CardContent className="p-6">
+              <p className="text-gray-300 mb-6 text-lg">{project.description}</p>
               
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2 mb-6">
                 {project.technologies.map((tech, index) => (
-                  <Badge key={index} className="bg-gray-800 text-[#76c6d9] border-2 border-gray-700">
+                  <Badge key={index} className="bg-gray-800 text-[#76c6d9] border-2 border-gray-700 text-base py-1 px-3">
                     {tech}
                   </Badge>
                 ))}
               </div>
             </CardContent>
             
-            <CardFooter className="flex gap-3 p-4 pt-0">
+            <CardFooter className="flex gap-4 p-6 pt-0">
               <Button 
-                className="w-1/2 pixel-btn bg-gray-800 text-[#76c6d9] hover:bg-[#76c6d9] hover:text-black" 
-                size="sm"
+                className="w-1/2 pixel-btn bg-gray-800 text-[#76c6d9] hover:bg-[#76c6d9] hover:text-black text-lg py-6" 
+                size="lg"
                 onClick={() => window.open(project.demoLink, '_blank')}
               >
                 DEMO
               </Button>
               <Button 
-                className="w-1/2 pixel-btn bg-gray-800 text-[#76c6d9] hover:bg-[#76c6d9] hover:text-black" 
-                size="sm"
+                className="w-1/2 pixel-btn bg-gray-800 text-[#76c6d9] hover:bg-[#76c6d9] hover:text-black text-lg py-6" 
+                size="lg"
                 onClick={() => window.open(project.codeLink, '_blank')}
               >
                 CODE
