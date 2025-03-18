@@ -13,24 +13,6 @@ const projects = [
     image: "/lovable-uploads/8060861b-719c-401b-a638-6c062ad4013a.png",
     demoLink: "https://www.vgi-bus-booking.de/",
     codeLink: "https://github.com/FlamurMaliqi/CodingSample"
-  },
-  {
-    id: 2,
-    title: "Data Visualizer",
-    description: "Interactive data visualization dashboard for business analytics",
-    technologies: ["D3.js", "Vue", "Firebase"],
-    image: "/lovable-uploads/227722af-c549-481b-92a7-1bb07b1b5652.png",
-    demoLink: "#",
-    codeLink: "#"
-  },
-  {
-    id: 3,
-    title: "E-Commerce Platform",
-    description: "Full-featured online store with payment processing",
-    technologies: ["React", "GraphQL", "Stripe"],
-    image: "/lovable-uploads/227722af-c549-481b-92a7-1bb07b1b5652.png",
-    demoLink: "#",
-    codeLink: "#"
   }
 ];
 
@@ -42,7 +24,7 @@ const Projects = () => {
         PROJECTS
       </h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6">
         {projects.map(project => (
           <Card 
             key={project.id} 
