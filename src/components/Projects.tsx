@@ -10,7 +10,7 @@ const projects = [
     title: "Bus Booking System",
     description: "A bus booking tool for the local community",
     technologies: ["React", "Quarkus"],
-    image: "/lovable-uploads/227722af-c549-481b-92a7-1bb07b1b5652.png",
+    image: "/lovable-uploads/8060861b-719c-401b-a638-6c062ad4013a.png",
     demoLink: "https://www.vgi-bus-booking.de/",
     codeLink: "https://github.com/FlamurMaliqi/CodingSample"
   },
