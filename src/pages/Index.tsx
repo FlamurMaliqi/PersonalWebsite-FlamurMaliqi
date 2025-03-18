@@ -49,7 +49,7 @@ const Index = () => {
       
       <div className="container mx-auto px-4 relative z-10 flex-grow flex items-center justify-center overflow-auto">
         <div id="home" className={`w-full ${activeSection === 'home' ? 'block' : 'hidden'}`}>
-          <Hero />
+          <Hero setActiveSection={setActiveSection} />
         </div>
         
         <div id="about" className={`pt-16 w-full ${activeSection === 'about' ? 'block' : 'hidden'}`}>

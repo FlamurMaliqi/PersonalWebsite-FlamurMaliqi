@@ -2,7 +2,11 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 
-const Hero = () => {
+interface HeroProps {
+  setActiveSection: (section: string) => void;
+}
+
+const Hero: React.FC<HeroProps> = ({ setActiveSection }) => {
   const [typedText, setTypedText] = useState('');
   const fullText = 'FLAMUR MALIQI';
   const [showCursor, setShowCursor] = useState(true);
@@ -22,6 +26,10 @@ const Hero = () => {
     }, 500);
     return () => clearInterval(interval);
   }, []);
+
+  const handleNavigation = (section: string) => {
+    setActiveSection(section);
+  };
 
   return (
     <div className="flex flex-col items-center justify-center h-full text-center pixel-fade-in">
@@ -44,10 +52,18 @@ const Hero = () => {
         </div>
         
         <div className="flex flex-wrap justify-center gap-3">
-          <Button className="pixel-btn hover:bg-[#76c6d9] text-sm py-2 px-4" variant="outline">
+          <Button 
+            className="pixel-btn hover:bg-[#76c6d9] text-sm py-2 px-4" 
+            variant="outline"
+            onClick={() => handleNavigation('projects')}
+          >
             VIEW PROJECTS
           </Button>
-          <Button className="pixel-btn hover:bg-[#76c6d9] text-sm py-2 px-4" variant="outline">
+          <Button 
+            className="pixel-btn hover:bg-[#76c6d9] text-sm py-2 px-4" 
+            variant="outline"
+            onClick={() => handleNavigation('contact')}
+          >
             CONTACT ME
           </Button>
         </div>
