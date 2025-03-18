@@ -8,16 +8,16 @@ const skillsCategories = [
       { name: "Java", level: 90 },
       { name: "Python", level: 85 },
       { name: "C", level: 75 },
-      { name: "ABAP", level: 70 }
+      { name: "JavaScript", level: 85 }
     ]
   },
   {
-    category: "Frontend",
+    category: "Infrastructure",
     skills: [
-      { name: "Vue.js", level: 85 },
-      { name: "Next.js", level: 75 },
-      { name: "HTML/CSS", level: 90 },
-      { name: "JavaScript", level: 85 }
+      { name: "Docker", level: 85 },
+      { name: "Kubernetes", level: 80 },
+      { name: "Jenkins", level: 85 },
+      { name: "OpenShift", level: 75 }
     ]
   },
   {
@@ -34,7 +34,7 @@ const skillsCategories = [
     skills: [
       { name: "Matlab", level: 90 },
       { name: "Git", level: 85 },
-      { name: "Docker/Kubernetes", level: 80 },
+      { name: "CI/CD", level: 80 },
       { name: "Apache Camel", level: 75 }
     ]
   }
@@ -77,8 +77,8 @@ const Skills = () => {
         <h3 className="text-lg font-bold text-white mb-4">OTHER SKILLS</h3>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {["SAP Development", "Jenkins", "OpenShift", "API Testing", 
-            "Simulink", "Embedded Systems", "Agile Methodologies", "CI/CD"].map((skill, i) => (
+          {["API Testing", "Simulink", "Embedded Systems", "Agile Methodologies", 
+            "Terraform", "AWS", "Azure", "DevOps"].map((skill, i) => (
             <div key={i} className="border-2 border-gray-700 bg-gray-800 p-2 text-center text-gray-300 text-sm">
               {skill}
             </div>
