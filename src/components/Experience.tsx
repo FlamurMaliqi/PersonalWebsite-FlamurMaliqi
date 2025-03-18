@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Separator } from '@/components/ui/separator';
 
@@ -11,7 +12,7 @@ const experiences = [
     description: [
       "Incoming"
     ],
-    icon: "/lovable-uploads/b0e9feaf-d7a2-4bd7-a732-221cbd419a05.png"
+    icon: "/lovable-uploads/4f34a40e-a575-41ef-9b28-8a6597a4567b.png"
   },
   {
     id: 2,
@@ -23,7 +24,7 @@ const experiences = [
       "Working with Kubernetes for deployment and management of containerized applications",
       "Utilizing Apache Camel for integration and data exchange between services"
     ],
-    icon: "/lovable-uploads/06c5d1ab-d48c-4035-9afe-22a35922fcd4.png"
+    icon: "/lovable-uploads/1c243b2b-753e-4db9-834d-7f3b281ba35d.png"
   },
   {
     id: 3,
@@ -37,7 +38,7 @@ const experiences = [
       "Adapted the test framework for easy deployment on multiple OpenShift clusters",
       "Developed a prototype to generate C++ code from a REST interface (Apache Iceberg, IBM Data Gate)"
     ],
-    icon: "/lovable-uploads/2b41ee63-6088-4b23-b139-bd03db8eeedf.png"
+    icon: "/lovable-uploads/13b51eff-ac52-4a4a-850c-4f11ffebfe1d.png"
   },
   {
     id: 4,
@@ -50,7 +51,7 @@ const experiences = [
       "Implemented real-time control logic in C for embedded systems, ensuring performance and accuracy in critical functions like engine management",
       "Created Python tools to automate development processes, boosting productivity and accuracy in data analysis and system integration"
     ],
-    icon: "/lovable-uploads/3a8891e9-83ed-4c72-90a9-82bf3e0d0d62.png"
+    icon: "/lovable-uploads/72dd074c-3986-4c0b-a825-575dffed232e.png"
   },
   {
     id: 5,
@@ -61,7 +62,7 @@ const experiences = [
       "As a tutor for the Java lecture, I introduce students to the concepts and practices of Java development",
       "I demonstrate and explain the basics of Java programming and help about 20 students to understand and apply these concepts"
     ],
-    icon: "/lovable-uploads/06c5d1ab-d48c-4035-9afe-22a35922fcd4.png"
+    icon: "/lovable-uploads/630551ef-8a06-49c8-96c0-18f25b952978.png"
   },
   {
     id: 6,
@@ -73,7 +74,7 @@ const experiences = [
       "Our innovative approach impressed the jury, earning us both the Innovation Award and the Jury Award",
       "Building on our prototype, the project received five-figure financial support from Audi Sport to develop a production-ready solution for real-world deployment"
     ],
-    icon: "/lovable-uploads/2b41ee63-6088-4b23-b139-bd03db8eeedf.png"
+    icon: "/lovable-uploads/72dd074c-3986-4c0b-a825-575dffed232e.png"
   },
   {
     id: 7,
@@ -85,7 +86,7 @@ const experiences = [
       "Developed and integrated software for innovative zonal architectures, central computing units, and smart controllers",
       "Worked on reducing wiring complexity and improving development efficiency in future vehicle networks, culminating in the creation of a demonstrator to showcase project outcomes and applications"
     ],
-    icon: "/lovable-uploads/3a8891e9-83ed-4c72-90a9-82bf3e0d0d62.png"
+    icon: "/lovable-uploads/2258aef8-0402-47b6-9e92-ae7571647866.png"
   },
   {
     id: 8,
@@ -98,7 +99,7 @@ const experiences = [
       "Developed and improved functionality in order management, warehouse management, transportation management, and financial reporting",
       "Developed all three types of SAP forms for data entry, reporting, and user interaction"
     ],
-    icon: "/lovable-uploads/06c5d1ab-d48c-4035-9afe-22a35922fcd4.png"
+    icon: "/lovable-uploads/99a140a0-f640-475c-95e9-b499d6fb9dee.png"
   }
 ];
 
