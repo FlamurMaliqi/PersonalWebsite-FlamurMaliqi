@@ -11,7 +11,7 @@ const experiences = [
     description: [
       "Incoming"
     ],
-    icon: "/lovable-uploads/4f34a40e-a575-41ef-9b28-8a6597a4567b.png"
+    icon: "/lovable-uploads/4fe11f14-6c48-4cf0-b105-1921fa1a64fd.png"
   },
   {
     id: 2,
