@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
@@ -47,37 +46,39 @@ const Index = () => {
       
       <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
       
-      <div className="container mx-auto px-4 relative z-10 flex-grow flex items-center justify-center overflow-auto">
-        <div id="home" className={`w-full ${activeSection === 'home' ? 'block' : 'hidden'}`}>
-          <Hero setActiveSection={setActiveSection} />
+      <main className="flex-grow mt-[72px] overflow-y-auto min-h-[calc(100vh-72px)]">
+        <div className="container mx-auto px-4 relative z-10 flex items-center justify-center">
+          <div id="home" className={`w-full ${activeSection === 'home' ? 'block' : 'hidden'}`}>
+            <Hero setActiveSection={setActiveSection} />
+          </div>
+          
+          <div id="about" className={`w-full ${activeSection === 'about' ? 'block' : 'hidden'}`}>
+            <About />
+          </div>
+          
+          <div id="experience" className={`w-full ${activeSection === 'experience' ? 'block' : 'hidden'}`}>
+            <Experience />
+          </div>
+          
+          <div id="projects" className={`w-full ${activeSection === 'projects' ? 'block' : 'hidden'}`}>
+            <Projects />
+          </div>
+          
+          <div id="education" className={`w-full ${activeSection === 'education' ? 'block' : 'hidden'}`}>
+            <Education />
+          </div>
+          
+          <div id="skills" className={`w-full ${activeSection === 'skills' ? 'block' : 'hidden'}`}>
+            <Skills />
+          </div>
+          
+          <div id="contact" className={`w-full ${activeSection === 'contact' ? 'block' : 'hidden'}`}>
+            <Contact />
+          </div>
         </div>
-        
-        <div id="about" className={`pt-16 w-full ${activeSection === 'about' ? 'block' : 'hidden'}`}>
-          <About />
-        </div>
-        
-        <div id="experience" className={`pt-16 w-full ${activeSection === 'experience' ? 'block' : 'hidden'}`}>
-          <Experience />
-        </div>
-        
-        <div id="projects" className={`pt-16 w-full ${activeSection === 'projects' ? 'block' : 'hidden'}`}>
-          <Projects />
-        </div>
-        
-        <div id="education" className={`pt-16 w-full ${activeSection === 'education' ? 'block' : 'hidden'}`}>
-          <Education />
-        </div>
-        
-        <div id="skills" className={`pt-16 w-full ${activeSection === 'skills' ? 'block' : 'hidden'}`}>
-          <Skills />
-        </div>
-        
-        <div id="contact" className={`pt-16 w-full ${activeSection === 'contact' ? 'block' : 'hidden'}`}>
-          <Contact />
-        </div>
-      </div>
+      </main>
       
-      <footer className="text-center text-gray-500 text-xs py-6 px-4 border-t border-gray-800">
+      <footer className="fixed bottom-0 left-0 right-0 text-center text-gray-500 text-xs py-6 px-4 border-t border-gray-800 bg-black opacity-0 transition-opacity duration-300 hover:opacity-100">
         <p className="mb-2">© {new Date().getFullYear()} | Made with pixel power</p>
         <div className="text-[10px] binary-code">01001100 01101111 01110110 01100001 01100010 01101100 01100101</div>
       </footer>
