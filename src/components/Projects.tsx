@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -7,6 +6,24 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 const projects = [
   {
     id: 1,
+    title: "Audi Kreathon - Smart Shift Scheduling",
+    description: "Led the development of an award-winning intelligent shift scheduling system for Audi's workforce. The platform enabled employees to input shift preferences while using smart algorithms to optimize schedules. The project won both the Innovation Prize and Jury Prize at Audi RealLabor Kreathon 2023, leading to the formation of a GbR partnership and proof-of-concept phase for internal Audi implementation.",
+    technologies: ["React", "Node.js", "Algorithms", "UI/UX Design"],
+    image: "/lovable-uploads/audi-logo.png",
+    demoLink: "https://www.figma.com/design/5d0fiyxMTMrDGq6i4zoAep/AUDI?node-id=0-1&t=lRBo2PLXj8YFZFDT-0",
+    codeLink: "https://www.figma.com/design/5d0fiyxMTMrDGq6i4zoAep/AUDI?node-id=0-1&t=lRBo2PLXj8YFZFDT-0"
+  },
+  {
+    id: 2,
+    title: "Evia - Future of Communication",
+    description: "A cutting-edge communication platform that revolutionizes how teams interact and collaborate. The platform focuses on creating an unfair advantage through innovative communication solutions, featuring a modern web interface and robust team management capabilities.",
+    technologies: ["React", "Node.js", "UI/UX Design", "Web Development"],
+    image: "/lovable-uploads/evia-logo.png",
+    demoLink: "https://www.evia.work",
+    codeLink: "https://www.evia.work"
+  },
+  {
+    id: 3,
     title: "Bus Booking System",
     description: "A bus booking tool for the local community",
     technologies: ["React", "Quarkus"],
@@ -18,13 +35,13 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="pixel-fade-in">
+    <div className="pixel-fade-in pt-20">
       <h2 className="text-2xl font-bold mb-6 text-[#76c6d9] inline-flex items-center">
         <span className="bg-[#76c6d9] w-3 h-3 mr-2"></span>
         PROJECTS
       </h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map(project => (
           <Card 
             key={project.id} 
