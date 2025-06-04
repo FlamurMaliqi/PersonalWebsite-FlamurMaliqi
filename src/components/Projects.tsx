@@ -19,8 +19,8 @@ const projects = [
     description: "A cutting-edge communication platform that revolutionizes how teams interact and collaborate. The platform focuses on creating an unfair advantage through innovative communication solutions, featuring a modern web interface and robust team management capabilities.",
     technologies: ["React", "Node.js", "UI/UX Design", "Web Development"],
     image: "/lovable-uploads/evia-logo.png",
-    demoLink: "https://www.evia.work",
-    codeLink: "https://www.evia.work"
+    demoLink: "https://frontend.livelydesert-1db1c46d.westeurope.azurecontainerapps.io/login",
+    codeLink: "https://frontend.livelydesert-1db1c46d.westeurope.azurecontainerapps.io/login"
   },
   {
     id: 3,
