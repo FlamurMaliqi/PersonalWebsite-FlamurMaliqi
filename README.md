@@ -1,69 +1,81 @@
-# Welcome to your Lovable project
+# Personal Website - Terminal Style
 
-## Project info
+A modern, computer science-inspired personal website with a terminal/byte aesthetic.
 
-**URL**: https://lovable.dev/projects/737ae710-8ad1-4329-a507-f244d01a4367
+## Features
 
-## How can I edit this code?
+- 🖥️ **Terminal-inspired design** - Green text on dark background with monospace fonts
+- ✨ **Glitch effects** - Animated glitch text in the hero section
+- 📱 **Fully responsive** - Works on all devices
+- 🎨 **Smooth animations** - Scroll-triggered fade-ins and hover effects
+- 💻 **Code syntax highlighting** - Styled code blocks for skills and contact
+- ⚡ **Interactive elements** - Hover effects, typing animations, and more
 
-There are several ways of editing your application.
+## Sections
 
-**Use Lovable**
+1. **About** - Personal information displayed as JavaScript code
+2. **Experience** - Work history in a timeline format
+3. **Projects** - Showcase of your projects with tech stacks
+4. **Hackathons** - Hackathon participation and achievements
+5. **Contact** - Contact information in terminal command style
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/737ae710-8ad1-4329-a507-f244d01a4367) and start prompting.
+## Customization
 
-Changes made via Lovable will be committed automatically to this repo.
+### Personal Information
 
-**Use your preferred IDE**
+Edit the following sections in `index.html`:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Hero Section** (lines ~40-60): Update the ASCII art and subtitle
+- **About Section** (lines ~80-100): Modify the JavaScript object with your details
+- **Experience Section** (lines ~110-160): Update job titles, companies, and descriptions
+- **Projects Section** (lines ~170-220): Add your projects with descriptions and links
+- **Hackathons Section** (lines ~230-280): Add hackathon details
+- **Contact Section** (lines ~290-320): Update email, GitHub, LinkedIn, Twitter links
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Colors
 
-Follow these steps:
+Modify the CSS variables in `styles.css` (lines ~10-20) to change the color scheme:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```css
+:root {
+    --text-primary: #00ff41;    /* Main green text */
+    --text-secondary: #7ee787;  /* Secondary green */
+    --accent: #00d9ff;          /* Accent color */
+    --bg-primary: #0a0e27;      /* Background */
+}
 ```
 
-**Edit a file directly in GitHub**
+### Matrix Rain Effect
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+To enable the matrix rain background effect, uncomment the last line in `script.js`:
 
-**Use GitHub Codespaces**
+```javascript
+createMatrixRain();
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Running Locally
 
-## What technologies are used for this project?
+Simply open `index.html` in your web browser, or use a local server:
 
-This project is built with .
+```bash
+# Using Python
+python3 -m http.server 8000
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Using Node.js (if you have http-server installed)
+npx http-server
 
-## How can I deploy this project?
+# Using PHP
+php -S localhost:8000
+```
 
-Simply open [Lovable](https://lovable.dev/projects/737ae710-8ad1-4329-a507-f244d01a4367) and click on Share -> Publish.
+Then visit `http://localhost:8000` in your browser.
 
-## I want to use a custom domain - is that possible?
+## Browser Support
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+
+## License
+
+Feel free to use this template for your own personal website!
