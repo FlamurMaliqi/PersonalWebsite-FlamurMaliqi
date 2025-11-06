@@ -1,18 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flamur Maliqi</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-    <meta property="og:image" content="/og-image.png" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flamurmaliqi.exe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="terminal-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-terminal">
+        <div class="nav-container">
+            <div class="terminal-prompt">
+                <span class="prompt-user">user@portfolio</span>
+                <span class="prompt-symbol">:~$</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">about</a></li>
+                <li><a href="#experience" class="nav-link">experience</a></li>
+                <li><a href="#projects" class="nav-link">projects</a></li>
+                <li><a href="#hackathons" class="nav-link">hackathons</a></li>
+                <li><a href="#contact" class="nav-link">contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn btn-close"></span>
+                    <span class="btn btn-minimize"></span>
+                    <span class="btn btn-maximize"></span>
+                </div>
+                <span class="terminal-title">flamurmaliqi.exe</span>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command typing" id="typing-command">cat about.txt</span>
+                </div>
+                <div class="terminal-output">
+                    <pre class="ascii-art">
+██╗     ██╗███╗   ███╗██╗   ██╗██╗  ██╗
+██║     ██║████╗ ████║██║   ██║╚██╗██╔╝
+██║     ██║██╔████╔██║██║   ██║ ╚███╔╝ 
+██║     ██║██║╚██╔╝██║██║   ██║ ██╔██╗ 
+███████╗██║██║ ╚═╝ ██║╚██████╔╝██╔╝ ██╗
+╚══════╝╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝
+                    </pre>
+                    <div class="hero-content">
+                        <h1 class="glitch" data-text="Developer & Problem Solver">
+                            <span>Developer & Problem Solver</span>
+                        </h1>
+                        <p class="subtitle">&gt; Building digital solutions, one line at a time</p>
+                        <div class="status-line">
+                            <span class="status-indicator"></span>
+                            <span>Status: <span class="status-text">AVAILABLE</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01.</span>
+                <h2 class="section-title">about_me()</h2>
+            </div>
+            <div class="terminal-box">
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-lang">about.js</span>
+                    </div>
+                    <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">about</span> = {
+  <span class="property">name</span>: <span class="string">"Your Name"</span>,
+  <span class="property">role</span>: <span class="string">"Software Developer"</span>,
+  <span class="property">location</span>: <span class="string">"Your Location"</span>,
+  <span class="property">education</span>: <span class="string">"Your Education"</span>,
+  <span class="property">interests</span>: [
+    <span class="string">"Web Development"</span>,
+    <span class="string">"Problem Solving"</span>,
+    <span class="string">"Open Source"</span>
+  ],
+  <span class="property">skills</span>: {
+    <span class="property">languages</span>: [<span class="string">"JavaScript"</span>, <span class="string">"Python"</span>, <span class="string">"Java"</span>],
+    <span class="property">frameworks</span>: [<span class="string">"React"</span>, <span class="string">"Node.js"</span>],
+    <span class="property">tools</span>: [<span class="string">"Git"</span>, <span class="string">"Docker"</span>, <span class="string">"AWS"</span>]
+  }
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02.</span>
+                <h2 class="section-title">work_experience()</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h3 class="job-title">Senior Software Engineer</h3>
+                            <span class="job-company">@ Company Name</span>
+                            <span class="job-date">2023 - Present</span>
+                        </div>
+                        <div class="job-description">
+                            <ul class="job-list">
+                                <li>Developed and maintained scalable web applications</li>
+                                <li>Led a team of 5 developers in agile environment</li>
+                                <li>Improved system performance by 40%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h3 class="job-title">Software Developer</h3>
+                            <span class="job-company">@ Previous Company</span>
+                            <span class="job-date">2021 - 2023</span>
+                        </div>
+                        <div class="job-description">
+                            <ul class="job-list">
+                                <li>Built RESTful APIs and microservices</li>
+                                <li>Collaborated with cross-functional teams</li>
+                                <li>Implemented CI/CD pipelines</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h3 class="job-title">Junior Developer</h3>
+                            <span class="job-company">@ First Company</span>
+                            <span class="job-date">2020 - 2021</span>
+                        </div>
+                        <div class="job-description">
+                            <ul class="job-list">
+                                <li>Learned modern web technologies</li>
+                                <li>Fixed bugs and implemented features</li>
+                                <li>Participated in code reviews</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03.</span>
+                <h2 class="section-title">projects()</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Project Name 1</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link">github</a>
+                            <a href="#" class="project-link">demo</a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A full-stack web application built with React and Node.js. Features include real-time updates, user authentication, and responsive design.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Project Name 2</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link">github</a>
+                            <a href="#" class="project-link">demo</a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Machine learning model for predictive analytics. Implemented using Python, TensorFlow, and deployed on AWS.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Project Name 3</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link">github</a>
+                            <a href="#" class="project-link">demo</a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Open-source CLI tool for developers. Written in Go, featuring plugin architecture and cross-platform support.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">CLI</span>
+                        <span class="tech-tag">Open Source</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hackathons Section -->
+    <section id="hackathons" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04.</span>
+                <h2 class="section-title">hackathons()</h2>
+            </div>
+            <div class="hackathons-grid">
+                <div class="hackathon-card">
+                    <div class="hackathon-badge">🏆 Winner</div>
+                    <h3 class="hackathon-title">Hackathon Name 1</h3>
+                    <div class="hackathon-meta">
+                        <span class="hackathon-date">2024</span>
+                        <span class="hackathon-location">Location</span>
+                    </div>
+                    <p class="hackathon-description">
+                        Built an innovative solution for [problem]. Won first place in the competition with a team of 4 developers.
+                    </p>
+                    <div class="hackathon-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="hackathon-card">
+                    <div class="hackathon-badge">🥈 Runner-up</div>
+                    <h3 class="hackathon-title">Hackathon Name 2</h3>
+                    <div class="hackathon-meta">
+                        <span class="hackathon-date">2023</span>
+                        <span class="hackathon-location">Location</span>
+                    </div>
+                    <p class="hackathon-description">
+                        Developed a mobile app prototype in 48 hours. Focused on solving real-world problems with innovative technology.
+                    </p>
+                    <div class="hackathon-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                </div>
+                <div class="hackathon-card">
+                    <div class="hackathon-badge">Participant</div>
+                    <h3 class="hackathon-title">Hackathon Name 3</h3>
+                    <div class="hackathon-meta">
+                        <span class="hackathon-date">2023</span>
+                        <span class="hackathon-location">Location</span>
+                    </div>
+                    <p class="hackathon-description">
+                        Created a web-based tool for developers. Learned new technologies and collaborated with amazing people.
+                    </p>
+                    <div class="hackathon-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Express</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05.</span>
+                <h2 class="section-title">contact()</h2>
+            </div>
+            <div class="contact-container">
+                <div class="terminal-box">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-lang">contact.sh</span>
+                        </div>
+                        <pre class="code-content"><code><span class="comment"># Let's connect!</span>
+<span class="command">echo</span> <span class="string">"Reach out via:"</span>
+
+<span class="command">email</span> = <span class="string">"your.email@example.com"</span>
+<span class="command">github</span> = <span class="string">"github.com/yourusername"</span>
+<span class="command">linkedin</span> = <span class="string">"linkedin.com/in/yourprofile"</span>
+<span class="command">twitter</span> = <span class="string">"@yourusername"</span>
+
+<span class="command">cat</span> <span class="string">"$email"</span> | <span class="command">mail</span> -s <span class="string">"Hello!"</span></code></pre>
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="contact-link">
+                        <span class="link-prefix">$</span> email
+                    </a>
+                    <a href="https://github.com" target="_blank" class="contact-link">
+                        <span class="link-prefix">$</span> github
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="contact-link">
+                        <span class="link-prefix">$</span> linkedin
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="contact-link">
+                        <span class="link-prefix">$</span> twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    <span class="prompt">$</span> echo "Built with &lt;3 and terminal vibes"
+                </p>
+                <p class="footer-copyright">
+                    <span class="prompt">$</span> date +"%Y" | xargs echo "©"
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
