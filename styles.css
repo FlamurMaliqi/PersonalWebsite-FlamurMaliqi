@@ -112,10 +112,12 @@ body {
 .hero-section {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 8rem 2rem 4rem;
+    padding: 0 2rem 4rem;
     position: relative;
+    gap: 0;
 }
 
 .terminal-window {
@@ -212,12 +214,40 @@ body {
 
 .hero-content {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.profile-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 3px solid var(--text-primary);
+    box-shadow: 0 0 20px var(--glow), 0 0 40px rgba(0, 255, 65, 0.2);
+    object-fit: cover;
+    object-position: 60% center;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.profile-image:hover {
+    box-shadow: 0 0 30px var(--glow), 0 0 60px rgba(0, 255, 65, 0.4);
+    transform: scale(1.4);
 }
 
 .hero-title {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     color: var(--text-primary);
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -226,7 +256,7 @@ body {
 .glitch {
     font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     position: relative;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -273,7 +303,7 @@ body {
 .subtitle {
     color: var(--text-muted);
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
 .status-line {
@@ -282,6 +312,7 @@ body {
     gap: 0.5rem;
     justify-content: center;
     color: var(--text-muted);
+    margin-top: 0.5rem;
 }
 
 .status-indicator {
@@ -705,6 +736,21 @@ body {
 
     .ascii-art {
         font-size: 0.4rem;
+    }
+
+    .profile-image-container {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+        transform: scale(1.1);
+    }
+
+    .profile-image:hover {
+        transform: scale(1.2);
     }
 
     .hero-title {

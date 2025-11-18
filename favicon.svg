@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Terminal window background -->
+  <rect width="100" height="100" fill="#0d1117" rx="8"/>
+  
+  <!-- Terminal window border -->
+  <rect x="5" y="5" width="90" height="90" fill="none" stroke="#00ff41" stroke-width="2" rx="4"/>
+  
+  <!-- Terminal header -->
+  <rect x="8" y="8" width="84" height="20" fill="#161b22" rx="2"/>
+  
+  <!-- Terminal buttons -->
+  <circle cx="18" cy="18" r="4" fill="#ff5f56"/>
+  <circle cx="28" cy="18" r="4" fill="#ffbd2e"/>
+  <circle cx="38" cy="18" r="4" fill="#27c93f"/>
+  
+  <!-- Terminal prompt symbol -->
+  <text x="50" y="55" font-family="monospace" font-size="20" fill="#00d9ff" text-anchor="middle">$</text>
+  
+  <!-- Terminal cursor -->
+  <rect x="60" y="45" width="3" height="20" fill="#00ff41"/>
+</svg>
+
