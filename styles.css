@@ -214,8 +214,17 @@ body {
     text-align: center;
 }
 
-.glitch {
+.hero-title {
     font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.glitch {
+    font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
     position: relative;
@@ -698,8 +707,12 @@ body {
         font-size: 0.4rem;
     }
 
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
     .glitch {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .contact-container {
